@@ -1,0 +1,58 @@
+* {
+  font-family: Raleway;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1vw;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.sidebar {
+  margin-left: 0;
+  padding: 0;
+  width: 20%;
+  background-color: lightslategray;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  padding: 1vw;
+}
+
+.sidebar a.active {
+  background-color: lightgreen;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: dimgray;
+  color: white;
+}
+
+footer {
+  display: grid;
+  font-size: 1vw;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  align-items: center;
+  padding: 1vw;
+  box-shadow: 5px 5px 10px 0px black;
+  position: absolute;
+  bottom: 0;
+  height: 3vw;
+}
+.margincontainer {
+  padding-bottom: 3vw;
+}
+.contentmain {
+  margin-left: 20%;
+  min-height: 100vh;
+  position: relative;
+}
